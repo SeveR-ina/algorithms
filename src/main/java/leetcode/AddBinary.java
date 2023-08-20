@@ -1,5 +1,15 @@
+package leetcode;
+
 import org.jetbrains.annotations.NotNull;
 
+/**
+ * Problem: Given two binary strings a and b, return their sum as a binary string.
+ * <p>
+ * Example 1:
+ * <p>
+ * Input: a = "11", b = "1"
+ * Output: "100"
+ */
 public class AddBinary {
     //https://leetcode.com/problems/add-binary
     public static @NotNull String addBinary(@NotNull String a, @NotNull String b) {

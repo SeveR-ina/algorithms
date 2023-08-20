@@ -1,5 +1,16 @@
+package leetcode;
+
 import org.jetbrains.annotations.NotNull;
 
+/**
+ * Problem:
+ * Write a function to find the longest common prefix string amongst an array of strings.
+ * If there is no common prefix, return an empty string "".
+ * <p>
+ * Example 1:
+ * Input: strs = ["flower","flow","flight"]
+ * Output: "fl"
+ */
 public class LongestCommonPrefix {
     public static @NotNull String longestCommonPrefix(String @NotNull [] strs) {
         //https://leetcode.com/problems/longest-common-prefix

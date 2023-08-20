@@ -1,10 +1,22 @@
+package leetcode;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class GroupAnagrams {
+/**
+ * Problem:
+ * Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+ * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+ * typically using all the original letters exactly once.
+ * <p>
+ * Example 1:
+ * Input: strs = ["eat","tea","tan","ate","nat","bat"]
+ * Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+ */
+public class GroupAnagrams { //TODO: solve it
     //https://leetcode.com/problems/group-anagrams/
     public static @NotNull List<List<String>> groupAnagrams(String @NotNull [] strs) {
         List<List<String>> listOfLists = new ArrayList<>();

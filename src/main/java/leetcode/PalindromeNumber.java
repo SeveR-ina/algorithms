@@ -1,3 +1,14 @@
+package leetcode;
+
+/**
+ * Problem:
+ * Given an integer x, return true if x is a palindrome, and false otherwise.
+ * <p>
+ * Example 1:
+ * Input: x = 121
+ * Output: true
+ * Explanation: 121 reads as 121 from left to right and from right to left.
+ */
 public class PalindromeNumber {
 
     //https://leetcode.com/problems/palindrome-number/

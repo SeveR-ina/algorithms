@@ -1,9 +1,10 @@
+import leetcode.AddBinary;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AddBinaryTest extends AddBinary {
 
-    @Test(description = "AddBinary: TC1")
+    @Test(description = "leetcode.AddBinary: TC1")
     public void addBinaryTestCaseOne() {
         String a, b, result;
         a = "11";
@@ -13,7 +14,7 @@ public class AddBinaryTest extends AddBinary {
         Assert.assertEquals(result, expected, "Actual result " + result + " != " + expected);
     }
 
-    @Test(description = "AddBinary: TC2")
+    @Test(description = "leetcode.AddBinary: TC2")
     public void addBinaryTestCaseTwo() {
         String a, b, result;
         a = "1010";
@@ -23,7 +24,7 @@ public class AddBinaryTest extends AddBinary {
         Assert.assertEquals(result, expected, "Actual result " + result + " != " + expected);
     }
 
-    @Test(description = "AddBinary: TC3")
+    @Test(description = "leetcode.AddBinary: TC3")
     public void addBinaryTestCaseThree() {
         String a, b, result;
         a = "1111";

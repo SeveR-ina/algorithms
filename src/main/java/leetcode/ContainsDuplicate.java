@@ -1,7 +1,18 @@
+package leetcode;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashSet;
 
+/**
+ * Problem:
+ * Given an integer array nums, return true if any value appears at least twice in the array,
+ * and return false if every element is distinct.
+ * <p>
+ * Example 1:
+ * Input: nums = [1,2,3,1]
+ * Output: true
+ */
 public class ContainsDuplicate {
     //https://leetcode.com/problems/contains-duplicate/
     public static boolean containsDuplicate(int @NotNull [] nums) {
