@@ -1,9 +1,11 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.util.HashMap;
 
 public class RansomNote {
     //https://leetcode.com/problems/ransom-note/
 
-    public static boolean canConstruct(String ransomNote, String magazine) {
+    public static boolean canConstruct(@NotNull String ransomNote, @NotNull String magazine) {
         int lengthM = magazine.length();
         int lengthNote = ransomNote.length();
         ransomNote = ransomNote.toLowerCase();

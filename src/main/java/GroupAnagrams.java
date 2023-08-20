@@ -1,10 +1,12 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class GroupAnagrams {
     //https://leetcode.com/problems/group-anagrams/
-    public static List<List<String>> groupAnagrams(String[] strs) {
+    public static @NotNull List<List<String>> groupAnagrams(String @NotNull [] strs) {
         List<List<String>> listOfLists = new ArrayList<>();
         int n = strs.length;
         if (n == 1) {

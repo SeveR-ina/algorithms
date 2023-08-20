@@ -1,6 +1,8 @@
+import org.jetbrains.annotations.NotNull;
+
 public class BubbleSort {
 
-    public static void bubbleSort(int[] arr) {
+    public static void bubbleSort(int @NotNull [] arr) {
         int length = arr.length;
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length - i - 1; j++) {

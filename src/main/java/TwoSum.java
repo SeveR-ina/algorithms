@@ -1,3 +1,5 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -5,7 +7,7 @@ import java.util.Map;
 public class TwoSum {
     //https://leetcode.com/problems/two-sum/
 
-    public static int[] twoSum(int[] nums, int target) {
+    public static int @NotNull [] twoSum(int @NotNull [] nums, int target) {
         int n = nums.length;
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < n; i++) {

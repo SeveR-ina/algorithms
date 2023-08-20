@@ -1,8 +1,10 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Stack;
 
 public class ValidParentheses {
     //https://leetcode.com/problems/valid-parentheses/
-    public static boolean isValid(String s) {
+    public static boolean isValid(@NotNull String s) {
         int l = s.length();
         if (l % 2 == 1) return false;
         Stack<Character> stack = new Stack<>();

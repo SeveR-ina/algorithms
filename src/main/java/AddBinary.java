@@ -1,6 +1,8 @@
+import org.jetbrains.annotations.NotNull;
+
 public class AddBinary {
     //https://leetcode.com/problems/add-binary
-    public static String addBinary(String a, String b) {
+    public static @NotNull String addBinary(@NotNull String a, @NotNull String b) {
         int carry = 0;
         StringBuilder sb = new StringBuilder();
         int i = a.length() - 1;

@@ -1,6 +1,8 @@
+import org.jetbrains.annotations.NotNull;
+
 public class RomanNumerals {
     //https://leetcode.com/problems/roman-to-integer/
-    public static int romanToInt(String s) {
+    public static int romanToInt(@NotNull String s) {
         int n = s.length();
         int count = 0;
         if (s.contains("IV")) {

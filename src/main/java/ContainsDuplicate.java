@@ -1,8 +1,10 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.util.HashSet;
 
 public class ContainsDuplicate {
     //https://leetcode.com/problems/contains-duplicate/
-    public static boolean containsDuplicate(int[] nums) {
+    public static boolean containsDuplicate(int @NotNull [] nums) {
         HashSet<Integer> set = new HashSet<>();
         for (int num : nums) {
             if (set.contains(num)) {

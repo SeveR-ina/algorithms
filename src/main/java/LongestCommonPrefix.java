@@ -1,5 +1,7 @@
+import org.jetbrains.annotations.NotNull;
+
 public class LongestCommonPrefix {
-    public static String longestCommonPrefix(String[] strs) {
+    public static @NotNull String longestCommonPrefix(String @NotNull [] strs) {
         //https://leetcode.com/problems/longest-common-prefix
         int n = strs.length;
         if (n == 0) {

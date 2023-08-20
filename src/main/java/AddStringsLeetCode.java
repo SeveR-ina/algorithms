@@ -1,6 +1,8 @@
+import org.jetbrains.annotations.NotNull;
+
 public class AddStringsLeetCode {
     //https://leetcode.com/problems/add-strings/
-    public static String addStrings(String num1, String num2) {
+    public static @NotNull String addStrings(@NotNull String num1, @NotNull String num2) {
         int i = num1.length() - 1;
         int j = num2.length() - 1;
         int carry = 0;

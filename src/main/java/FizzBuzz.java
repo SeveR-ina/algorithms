@@ -1,10 +1,12 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class FizzBuzz {
     //https://leetcode.com/problems/fizz-buzz/
 
-    public static List<String> fizzBuzz(int n) {
+    public static @NotNull List<String> fizzBuzz(int n) {
         ArrayList<String> answer = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
             if (i % 15 == 0) {

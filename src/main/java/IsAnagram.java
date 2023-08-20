@@ -1,8 +1,10 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Arrays;
 
 public class IsAnagram {
 
-    public static boolean isAnagram(String s, String t) {
+    public static boolean isAnagram(@NotNull String s, @NotNull String t) {
         if (s.length() != t.length()) {
             return false;
         }
