@@ -21,34 +21,33 @@ public class TwoSum {
     //https://leetcode.com/problems/two-sum/
 
     public static int @NotNull [] twoSum(int @NotNull [] nums, int target) {
+        Map<Integer, Integer> numMap = new HashMap<>();
         int n = nums.length;
-        HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
-            map.put(i, nums[i]);
+            numMap.put(nums[i], i);
         }
-        int[] result = new int[2];
-        for (Map.Entry<Integer, Integer> entrySet : map.entrySet()) {
-            for (int i = 1; i < n; i++) {
-                if (entrySet.getKey() == n) i = 0;
-                if ((entrySet.getKey() != i) && (entrySet.getValue() + nums[i] == target)) {
-                    result[0] = entrySet.getKey();
-                    result[1] = i;
-                    Arrays.sort(result);
-                    return result;
-                }
+        for (int i = 0; i < n; i++) {
+            int complement = target - nums[i];
+            if (numMap.containsKey(complement) && numMap.get(complement) != i) {
+                return new int[]{i, numMap.get(complement)};
             }
         }
-        return result;
+        return new int[]{}; // No solution found
     }
 
     public static void main(String[] args) {
         int[] nums = {3, 2, 4};
-        // 3, 2, 3 / 6
-        // -3, 4, 3, 90 / 0
-        // 0, 4, 3, 0 / 0
-        // 3, 2, 4 / 6
-        int target = 6;
+        int target;
+        target = 6;
         System.out.println("result = " + Arrays.toString(twoSum(nums, target)));
-        twoSum(nums, target);
+        nums = new int[]{2, 7, 11, 15};
+        target = 17;
+        System.out.println("result = " + Arrays.toString(twoSum(nums, target)));
+        nums = new int[]{-3, 4, 3, 90};
+        target = 0;
+        System.out.println("result = " + Arrays.toString(twoSum(nums, target)));
+        nums = new int[]{1, 5, 0, 4, 1};
+        target = 5;
+        System.out.println("result = " + Arrays.toString(twoSum(nums, target)));
     }
 }
