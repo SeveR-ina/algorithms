@@ -35,23 +35,4 @@ public class AddStringsLeetCode {
         }
         return result.reverse().toString();
     }
-
-    public static void main(String[] args) {
-        String num1, num2;
-        num1 = "11";
-        num2 = "123";
-        System.out.println(addStrings(num1, num2)); // Output: "134"
-
-        num1 = "456";
-        num2 = "77";
-        System.out.println(addStrings(num1, num2)); // Output: "533"
-
-        num1 = "0";
-        num2 = "0";
-        System.out.println(addStrings(num1, num2)); // Output: "0"
-
-        num1 = "99";
-        num2 = "99";
-        System.out.println(addStrings(num1, num2)); //198
-    }
 }

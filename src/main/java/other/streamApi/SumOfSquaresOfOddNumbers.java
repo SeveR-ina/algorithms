@@ -1,4 +1,4 @@
-package streamApi;
+package other.streamApi;
 
 import org.junit.Test;
 import org.junit.experimental.runners.Enclosed;

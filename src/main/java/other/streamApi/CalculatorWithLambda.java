@@ -1,4 +1,4 @@
-package streamApi;
+package other.streamApi;
 
 public class CalculatorWithLambda {
     public static void main(String[] args) {
