@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class BracketMatcher {
     //https://coderbyte.com/information/Bracket%20Matcher
-    public static int BracketMatcher(String str) {
+    public static int bracketMatcher(String str) {
         str = str.replaceAll("[^()]", "");
         Stack<Character> stack = new Stack<>();
         char[] chars = str.toCharArray();
@@ -26,6 +26,6 @@ public class BracketMatcher {
     public static void main(String[] args) {
         // keep this function call here
         Scanner s = new Scanner(System.in);
-        System.out.print(BracketMatcher(s.nextLine()));
+        System.out.print(bracketMatcher(s.nextLine()));
     }
 }
