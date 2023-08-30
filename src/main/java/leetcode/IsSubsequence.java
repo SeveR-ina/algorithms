@@ -16,7 +16,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class IsSubsequence {
     //https://leetcode.com/problems/is-subsequence/
-    public boolean isSubsequence(@NotNull String s, @NotNull String t) {
+    public static boolean isSubsequence(@NotNull String s, @NotNull String t) {
         int sLength = s.length(), tLength = t.length();
         int i = 0;
         for (int j = 0; j < tLength && i < sLength; j++) {
