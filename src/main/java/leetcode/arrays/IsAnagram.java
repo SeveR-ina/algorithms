@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.arrays;
 
 import org.jetbrains.annotations.NotNull;
 

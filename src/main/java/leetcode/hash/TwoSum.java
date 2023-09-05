@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.hash;
 
 import org.jetbrains.annotations.NotNull;
 

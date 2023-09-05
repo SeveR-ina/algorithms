@@ -1,4 +1,4 @@
-import leetcode.LengthOfLastWord;
+import leetcode.arrays.LengthOfLastWord;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

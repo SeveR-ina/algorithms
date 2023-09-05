@@ -1,9 +1,10 @@
+import leetcode.arrays.MergeSortedArray;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.util.Arrays;
 
-public class MergeSortedArrayTest extends leetcode.MergeSortedArray {
+public class MergeSortedArrayTest extends MergeSortedArray {
 
     @DataProvider(name = "testData")
     public Object[][] testData() {
