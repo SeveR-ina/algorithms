@@ -1,4 +1,4 @@
-import leetcode.AddStringsLeetCode;
+import leetcode.strings.AddStringsLeetCode;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

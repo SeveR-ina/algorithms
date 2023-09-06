@@ -1,4 +1,4 @@
-import leetcode.IsSubsequence;
+import leetcode.strings.IsSubsequence;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

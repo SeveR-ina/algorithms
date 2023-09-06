@@ -1,4 +1,4 @@
-import leetcode.IndexOfFirstOccurrenceInString;
+import leetcode.strings.IndexOfFirstOccurrenceInString;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
