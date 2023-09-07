@@ -1,4 +1,4 @@
-import leetcode.SingleNumber;
+import leetcode.hash.SingleNumber;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
