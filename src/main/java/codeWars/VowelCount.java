@@ -1,6 +1,8 @@
-package other.codeWars;
+package codeWars;
 
 import org.junit.Test;
+import org.junit.experimental.runners.Enclosed;
+import org.junit.runner.RunWith;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,6 +16,7 @@ import static org.junit.Assert.assertEquals;
  */
 
 //https://www.codewars.com/kata/54ff3102c1bad923760001f3
+@RunWith(Enclosed.class)
 public class VowelCount {
 
     public static int getCount(String str) {
@@ -24,7 +27,10 @@ public class VowelCount {
                 .collect(Collectors.joining());*/
         //str = str.replaceAll("[aeiouAEIOU]", "");
 
-        return (int) str.chars().filter(c -> c == 'a' || c == 'e' || c == 'o' || c == 'u' || c == 'i').count();
+        return (int) str
+                .chars()
+                .filter(c -> c == 'a' || c == 'e' || c == 'o' || c == 'u' || c == 'i')
+                .count();
     }
 
     public static class VowelsTest {
